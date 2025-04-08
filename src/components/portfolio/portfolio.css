@@ -1,0 +1,232 @@
+#portfolio {
+  background: #121212; /* ← 여기서 전체 배경색 설정 */
+}
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__item:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.portfolio__item h3 {
+  margin: 1.2rem 0 2rem;
+}
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.portfolio__item-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff00; /* 배경색은 선택사항 */
+}
+
+.portfolio__item-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+/* ================ MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+/* 모달 오버레이 */
+.portfolio__modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* 모달 콘텐츠 */
+.portfolio__modal-content {
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  position: relative;
+  text-align: left;
+}
+
+/* 이미지 */
+.portfolio__modal-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* 닫기 버튼 */
+.portfolio__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* 설명 텍스트 */
+.portfolio__modal-text {
+  white-space: pre-wrap;
+  margin: 2rem 0;
+}
+
+/* 버튼 영역 */
+.portfolio__modal-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+/* 전체 레이아웃 기본 */
+#portfolio {
+  padding: 2rem;
+  background: #121212;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개씩 배치 */
+  gap: 2rem; /* 아이템 간 간격 */
+  padding: 2rem 0;
+}
+
+.portfolio__item {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.portfolio__item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio__item-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 모달 스타일 */
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal__container {
+  background: #1e1e1e;
+  width: 1000px;
+  max-width: 1000px;
+  height: 80vh;               /* 뷰포트 높이의 90%만큼 사용 */
+  overflow-y: auto;           /* 세로 스크롤 가능 */
+  overflow-x: hidden;         /* 가로 스크롤 방지 (선택) */
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal__container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal__container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+/* 모달 닫기 버튼 */
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* 내용 구성 */
+.modal__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.modal__image {
+  width: 400px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.modal__content {
+  line-height: 1.9;
+  color: #ddd;
+  font-size: 1.20rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #2a2a2a;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal__section {
+  margin-top: 2rem;
+}
+
+.modal__section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
