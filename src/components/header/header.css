@@ -1,3 +1,82 @@
+/* 배경 그라데이션 + 애니메이션 */
+/* .hero {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  padding-top: 5rem;
+  color: #fff;
+  text-align: center;
+} */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 타이핑 효과 */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #851587;
+  width: 0; /* ✅ 꼭 있어야 함! */
+  animation: typing 2.5s steps(5, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 5ch }  /* "Yerim"은 5글자 */
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* 이름 강조 (네온 느낌) */
+.highlight {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d099df;
+  text-shadow: 0 0 10px #714da3, 0 0 20px #604495;
+}
+
+/* 이미지 - 폴라로이드 감성 */
+.me {
+  margin: 2rem auto;
+  width: 260px;
+  height: 340px;
+  border: 5px solid #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.me:hover {
+  transform: rotate(1deg) scale(1.03);
+}
+
+.me__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Scroll Down */
+.scroll__down {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #42a5f5;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 header {
   height: 100vh;
   padding-top: 7rem;

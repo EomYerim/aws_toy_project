@@ -1,38 +1,61 @@
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
-.experience__container > div {
-  background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
-  border-radius: 2rem;
+
+.experience__category {
+  background-color: var(--color-bg-variant);
+  padding: 2rem;
+  border-radius: 1rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
-.experience__container > div:hover {
+
+.experience__category h3 {
+  text-align: center;
+}
+
+.experience__category:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
 }
-.experience__container > div h3 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--color-primary);
-}
+
 .experience__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* 👉 2열로 배치 */
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
+
 .experience__details {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
+
 .experience__details-icon {
-  margin-top: 6px;
   color: var(--color-primary);
+  font-size: 1.5rem;
 }
+
+.progress__container {
+  width: 100%;
+  height: 8px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 100%;
+  background-color: #00c6a2; /* 원하는 색상으로 변경 가능 */
+  border-radius: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ============= */
 
 @media screen and (max-width: 1024px) {
