@@ -77,11 +77,11 @@ const Portfolio = () => {
       members: "2명 (프론트 1, 백엔드 1)",
       github: "https://github.com/linkmemo",
       motive: `링크를 저장하고 간편하게 메모를 추가할 수 있는 개인용 북마크 서비스가 있으면 좋겠다고 생각하여 개발하게 되었습니다.`,
-    },
+    }
   ];
 
   return (
-    <section id="portfolio">
+    <section >
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 

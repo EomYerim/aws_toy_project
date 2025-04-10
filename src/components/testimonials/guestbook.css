@@ -1,0 +1,79 @@
+body {
+  background-color: #1e1e2f; /* 어두운 배경 유지 */
+  font-family: 'Pretendard', sans-serif; /* 부드러운 글꼴 추천 */
+}
+
+.card {
+  background-color: #66667b; /* 더 어두운 카드 배경 */
+  color: #fff;               /* 카드 내부 텍스트는 흰색 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+input, textarea {
+  color: #333 !important; /* 더 진한 글씨 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999 !important; /* placeholder는 은은하게 */
+}
+
+.card {
+  background-color: #7d7dc3; /* 더 어두운 카드 배경 */
+  color: #7a6086;               /* 카드 내부 텍스트는 흰색 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.guestbook {
+  width: 1200px;
+  padding: 3rem;
+  background-color: #34309240;
+  border-radius: 1rem;
+}
+
+.guestbook__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.guestbook__form input,
+.guestbook__form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.guestbook__form button {
+  align-self: flex-end;
+  padding: 0.6rem 1.2rem;
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.guestbook__comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comment__card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment__name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.comment__message {
+  color: #333;
+}

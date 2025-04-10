@@ -42,7 +42,7 @@
 
 /* 이미지 - 폴라로이드 감성 */
 .me {
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 260px;
   height: 340px;
   border: 5px solid #fff;
@@ -115,7 +115,7 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 400px; /* 이미지 width와 동일하게 */
-  height: 500px; /* 이미지 height와 동일하게 */
+  height: 480px; /* 이미지 height와 동일하게 */
   position: absolute;
   left: calc(50% - 200px); /* 중앙 정렬을 위해 절반 값으로 계산 */
   margin-top: 4rem;

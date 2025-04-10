@@ -1,0 +1,64 @@
+/* 왼쪽 끝에 마우스 hover 감지용 영역 */
+.sidebar-hover-zone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px; /* 감지영역 너비 */
+    height: 100vh;
+    z-index: 999;
+  }
+  
+  /* 사이드바 */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* 기본은 화면 밖 */
+    width: 200px;
+    height: 100%;
+    background-color: #1f1f1f;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    color: white;
+    padding-top: 60px;
+  }
+  
+  /* 보일 때 */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .sidebar li:hover {
+    background-color: #333;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li:hover {
+    opacity: 0.7;
+  }
+  
+  
